@@ -1,0 +1,23 @@
+{
+  "PATH_DATA_TRAIN": "/Volumes/SD/running/NER/data/cluener_public/train.json",
+  "PATH_DATA_DEV": "/Volumes/SD/running/NER/data/cluener_public/dev.json",
+  "PATH_DATA_TEST": "/Volumes/SD/running/NER/data/cluener_public/test.json",
+  "PATH_WORD_DICT": "/Volumes/SD/running/NER/model/BiLSTM_CRF_torch/word_dict.pickle",
+  "MODEL": {
+    "embedding_dim": 128,
+    "hidden_size": 384,
+    "learning_rate": 0.001,
+    "weight_decay": 1.0e-4,
+    "dropout": 0.5,
+    "batch_size": 4,
+    "shuffle": true,
+    "gradient_normal": 5,
+    "epochs": 3,
+    "validation_rate": 0.1,
+    "factor": 0.2,
+    "patience": 2,
+    "eps": 1.0e-8,
+    "checkpoint": "/Volumes/SD/running/NER/model/BiLSTM_CRF_torch/BiLSTM_CRF.pth",
+    "config": "/Volumes/SD/running/NER/model/BiLSTM_CRF_torch/BiLSTM_CRF.json"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "PATH_DATA_TRAIN": "/Volumes/SD/running/NER/data/cluener_public/train_debug.json",
+  "PATH_DATA_DEV": "/Volumes/SD/running/NER/data/cluener_public/dev_debug.json",
+  "PATH_DATA_TEST": "/Volumes/SD/running/NER/data/cluener_public/test_debug.json",
+  "PATH_WORD_DICT": "/Volumes/SD/running/NER/model/BiLSTM_CRF/word_dict.pickle",
+  "USING_DEV_AS_VALIDATION_DATASET": true,
+  "MODEL": {
+    "BILSTM_CRF": {
+      "embed_size": 300,
+      "lstm_units": 512,
+      "l1": 1.0e-5,
+      "l2": 1.0e-5,
+      "merge_mode": "concat",
+      "learning_rate": 0.001,
+      "polynomial_decay_steps": 9000,
+      "polynomial_end_learning_rate": 1.0e-5,
+      "polynomial_power": 0.2,
+      "momentum": 0.0,
+      "decay": 1.0e-5,
+      "use_polynomial_decay": false,
+      "checkpoint_dir": "/Volumes/SD/running/NER/model/BiLSTM_CRF/ckpt",
+      "max_to_keep": 3,
+      "EPOCHS": 3,
+      "VALIDATION_SPLIT": 0.1,
+      "PATH_CONFIG": "/Volumes/SD/running/NER/model/BiLSTM_CRF/BiLSTM_CRF.json"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "vocab_size": 10,
+    "embedding_dim": 8,
+    "target_size": 6,
+    "hidden_size": 8,
+    "start_index": 0,
+    "end_index": 1,
+    "dropout": 0.5,
+    "train_minimum_loss": 13.283472108840943,
+    "valid_minimum_loss": 13.092205429077149
+}
